@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Informática</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-image: url(https://img.freepik.com/vector-premium/tecnologia-abstracta-red-mundial-global-telecomunicaciones-datos-digitales-tierra_258787-665.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        header{
+            background-color:darkblue;
+            color: white;
+            padding: 50px 30px;
+            text-align: center;
+            position: relative;
+        }
+        header h1{
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        header p {
+            font-size: 1.2em;
+        }
+        nav {
+            background-color:rgb(63, 3, 141);
+            padding: 9px;
+            text-align: center;
+        }
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: blue;
+        }
+        section {
+            margin: 20px 100px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0,0.1);
+        }
+        section h2 {
+            color: blue;
+            margin: 0;
+            font-family: 'Times New Roman';
+        }
+        section p {
+            margin: 20px 0;
+            font-family: 'Times New Roman';
+        }
+        section img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin: 20px;
+            width: 720px;
+            height: 380px;
+            animation-name: aparecer;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            animation-delay: 1s;
+            opacity: 0;
+        }
+        section iframe {
+                        display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin: 20px;
+            width: 720px;
+            height: 380px;
+        }
+        section ul {
+            margin: 17px 50px;
+        }
+        section li {
+            margin-bottom: 1px;
+        }
+        footer {
+            text-align: center;
+            margin: 20px 100px ;
+            margin-top: 20px;
+            font-size: 2em;
+            background-color: white;
+        }
+        section ol {
+            margin: 17px 50px;
+        }
+        section table {
+            margin: 17px 0px;
+        }
+        section table,th,td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        section th,td {
+            padding: 8px;
+            text-align: center;
+            font-size: 0.7em;
+        }
+        figure figcaption {
+            text-align: center;
+        }
+        @keyframes aparecer {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1; 
+            }
+        }
+        .question-form-section {
+            max-width: 600px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #555;
+        }
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+            font-size: 1em;
+        }
+        .form-group textarea {
+            resize: vertical; /* Permite redimensionar verticalmente */
+            min-height: 120px;
+        }
+        .form-group input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.1em;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+            width: auto; /* Para que el botón no ocupe todo el ancho */
+        }
+        .form-group input[type="submit"]:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>¡Descubre el Mundo de la Informática!</h1>
+        <p>Una aventura digital para jóvenes como tú.</p>
+    </header>
+        <nav>
+    <a href="#home">
+        Inicio
+    </a>
+    <a href="#Nosotros">
+        Acerca de Nosotros
+    </a>
+    <a href="#Internet">
+        ¿Qué es la Telemática?
+    </a>
+    <a href="#programar">
+        ¡A Programar!
+    </a>
+    <a href="#Preguntas">
+        Envianos tu Pregunta
+    </a>
+        </nav>
+        <section id="home">
+            <marquee>
+            <h2>¡Bievenido a Mundo Informática!</h2>
+            <p>El fin de esta página es formentar el conocimiento y conocer un poco mas sobre la informática y la telemática.</p>
+            </marquee>
+        </section>
+        <section id="Nosotros">
+            <h2>Acerca de Nosotros</h2>
+            <p>Somos estudiantes de secundaria tratando de mejorar el conocimiento de telemática, Este proyecto es más que una página, es una forma de que los más jovenes entiendan lo importante que es la telemática</p>
+        </section>
+    <section id="Definicion">
+        <h2>¿Qué es la Informática?</h2>
+        <p>La informática es mucho más que solo usar computadoras. !Es la ciencia que estudia cómo procesar información de manera automática!
+            Imagina que tienes un monton de piezas de Lego.La informática te enseña cómo organizar esas piezas para construir cosas increibles,
+            ¡pero en lugar de Lego,usamos datos e instrucciones!</p>
+        <img src="https://worldcampus.saintleo.edu/img/article/ventajas-informatica-empresas.webp">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/MFEVevUHIV8"
+        title="Video sobre la informática" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </section>
+    <section id="Partes">
+        <h2>Las Partes Secretas de tu Computadora</h2>
+        <p>Así como un cuerpo tiene diferentes partes que trabajan juntas,¡una computadora también! Conozcamos algunas de ellas.</p>
+        <ul>
+            <li><b>El Monitor:</b> ¡La pantalla donde ves todo!.</li>
+            <li><b>El Teclado:</b> Con letras y números para escribir tus ideas.</li>
+            <li><b>El Mouse:</b> Un amigo que te ayuda a señalar y hacer clic.</li>
+            <li><b>La Unidad Central de Procesamiento (CPU)</b> ¡El cerebro de la computadora!.</li>
+            <li><b>La Memoria RAM:</b> Una memoria rápida para trabajar en varias cosas a la vez.</li>
+        </ul>
+        <img src="https://i.pinimg.com/736x/3b/4d/43/3b4d430eb75159249e4140e225ca8db7.jpg">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/s-FFvTiIlbU" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </section>
+    <section id="Internet">
+        <h2>El Maravilloso Mundo del Internet</h2>
+        <p>¡El internet es como una biblioteca donde puedes encontrar información de todo el mundo!.También te permite hablar con amigos y ver videos divertidos.</p>
+        <p>Pero recuerda.¡siempre debemos usar el internet de forma segura y responsable!</p>
+        <img src="https://wisp.com.mx/wp-content/uploads/2021/11/Internet.jpg">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/GkA5WOeLWbM" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </section>
+    <section id="programar">
+        <h2>¡A Programar se Ha Dicho!</h2>
+        <p>Programar es como darle instrucciones a la computadora para que haga lo que tú quieras. ¡Es como ser el director de una obra de teatro pero con máquinas!</p>
+        <p>Con la programación,puedes crear tus propios juegos,aplicaciones y muchas cosas más. ¡Es súper divertido y te ayuda a pensar de forma lógica!.</p>
+        <img src="https://concepto.de/wp-content/uploads/2020/08/Programacion-informatica-scaled-e1724960033513.jpg">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/a7eznAouNak" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </section>
+    <section>
+        <h2>Ahora. ¿Qué es la Telemática?</h2>
+        <p>Es una disciplina que surge de la fusión de dos campos: las telecomunicaciones y la informática. En esencia, se trata de la tecnología que permite el envío, la recepción y el procesamiento de información computarizada a través de redes de comunicación.</p>
+        <p>Imagina que es como el cerebro de un vehículo o un sistema, que no solo recolecta datos, sino que también los envía a un lugar central para ser analizados y para que se tomen decisiones en tiempo real.</p>
+        <img src="https://blog.carsync.com/hubfs/blog_19-de-enero.jpg">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/q3rDP9AA_fg" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </section>
+    <section>
+        <h2>Para Mantener Limpio y Sin Accidentes, el Espacio del Computador. ¡Tienes que Aplicar estas Reglas!</h2>
+        <ol>
+            <li><b>Mantén los líquidos lejos:</b> ¡Esta es la regla de oro! Un vaso de agua, café o refresco derramado puede arruinar tu teclado, mouse o incluso el computador por completo. Tenlos lejos, o usa recipientes con tapa segura.</li>
+            <li><b>No comas encima del teclado:</b> Las migas y los residuos de comida caen entre las teclas, atrayendo suciedad, insectos y dificultando el funcionamiento del teclado. Es mejor comer fuera del área de trabajo.</li>
+            <li><b>Limpia regularmente:</b>
+            <ul>
+                <li><b>Superficies:</b> Pasa un paño húmedo (no mojado) o toallitas desinfectantes por el escritorio, el monitor y la carcasa del computador.</li>
+                <li><b>Teclado:</b> Usa aire comprimido para sacar la suciedad entre las teclas y un paño suave para limpiar las superficies.</li>
+                <li><b>Pantalla:</b> Usa un paño de microfibra seco o un limpiador de pantallas especial, nunca productos abrasivos o paños ásperos</li>
+            </ul></li>
+            <li><b>Organiza los cables:</b> Los cables desordenados no solo se ven mal, sino que son un peligro. Puedes tropezar con ellos, o tu silla puede pasar por encima y dañarlos. Usa bridas, velcros o clips para agruparlos y pegarlos debajo del escritorio si es posible. Asegúrate de que no estén tensos.</li>
+            <li><b>Despeja tu escritorio:</b> Un escritorio lleno de papeles, libros y otros objetos reduce tu espacio de trabajo y aumenta las posibilidades de derramar algo o de que se caiga un periférico. Mantén solo lo esencial.</li>
+            <li><b>Buena ventilación:</b> Asegúrate de que las rejillas de ventilación de tu computador (especialmente laptops y computadoras de escritorio) no estén bloqueadas por objetos o polvo. Un equipo que se calienta demasiado puede funcionar mal o dañarse.</li>
+            <li><b>No bloquees los enchufes:</b> Evita sobrecargar los tomacorrientes y no cubras los enchufes con muebles u otros objetos que puedan dificultar la disipación del calor o el acceso rápido en caso de emergencia.</li>
+            <li><b>Atención a las mascotas:</b> Si tienes mascotas, ten cuidado con sus pelos (que pueden entrar en los ventiladores) y con que muerdan los cables, lo cual es peligroso para ellos y para tus equipos.</li>
+        </ol>
+        <img src="https://images.unsplash.com/photo-1603969409447-ba86143a03f6?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tYnJlJTIwdXNhbmRvJTIwY29tcHV0YWRvcmF8ZW58MHx8MHx8fDA%3D">
+            <img src="https://img.freepik.com/fotos-premium/accidente-trabajo-remoto-salpicaduras-cafe-computadora-portatil-crisis-cocina-problema-mujer-que-trabaja-casa-caos-independiente-derrame-te-teclado-mujer-independiente-danos-computadora_590464-182488.jpg">
+            <img src="https://previews.123rf.com/images/dexteris/dexteris2006/dexteris200600005/148262969-derramar-caf%C3%A9-en-la-laptop-negra-accidente-con-la-tecnolog%C3%ADa-concepto-de-da%C3%B1os-por-l%C3%ADquidos.jpg">
+    </section>
+    <section>
+        <h2>¡Si quieres un Experto en Programación!, Utiliza estos Lenguajes</h2>
+        <ul>
+            <li><b>Pseudocódigo:</b> Es como el "borrador" o el "plan" que haces antes de escribir un programa de verdad. No es un lenguaje que la computadora pueda entender, sino una forma de que los humanos diseñen y entiendan la lógica de un programa</li>
+            <li><b>HTML:</b> Es el lenguaje principal para crear páginas web. Piensa en él como la estructura o los "huesos" de una página.Utiliza etiquetas (como p para un párrafo o img para una imagen) para decirle al navegador qué tipo de contenido es y cómo debe organizarlo.</li>
+            <li><b>Pascal:</b> Es un lenguaje de programación creado para enseñar a la gente a programar de forma lógica y organizada. Piensa en él como un "entrenador" estricto pero efectivo para aprender a pensar como un programador.</li>
+            <li><b>CSS:</b> Es el lenguaje que usas para darle estilo y diseño a tus páginas web. Imagina que HTML es la estructura o los "huesos" de una página web (los textos, imágenes, enlaces, etc.). Pues bien, CSS es como la "ropa", el "maquillaje" y la "decoración" que le pones a esos huesos.</li>
+        </ul>
+        <img src="https://ceutec.hn/wp-content/uploads/2024/07/cuales-son-lenguajes-programacion.png">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pqfAvZC5clw" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </section>
+    <section id="Historia">
+        <h2>Aunque es Aburrido, Si Quieres ser un Progrmador, ¡Tienes que Saber la Historia del Computador!</h2>
+        <table>
+            <tr>
+            <th>Generación</th>
+            <th>Periodo Aproximado</th>
+            <th>Tecnología Clave</th>
+            <th>Características Principales</th>
+            <th>Ejemplos Emblemáticos</th>
+            </tr>
+            <tr>
+                <td>Primera</td>
+                <td>1940s - 1950s</td>
+                <td>Tubos de Vacío</td>
+                <td><ul>
+                    <li>Enormes, lentas, muy costosas.</li>
+                    <li>Generaban mucho calor.</li>
+                    <li>Programación en lenguaje de máquina (muy básico).</li>
+                    <li>Usaban tarjetas perforadas para entrada/salida.</li>
+                </ul></td>
+                <td>ENIAC, UNIVAC I, IBM 701</td>
+            </tr>
+            <tr>
+                <td>Segunda</td>
+                <td>1950s - 1960s</td>
+                <td>Transistores</td>
+                <td><ul>
+                    <li>Más pequeñas, rápidas, eficientes y económicas.</li>
+                    <li>Menor consumo de energía y generación de calor.</li>
+                    <li>Introducción de lenguajes de alto nivel (FORTRAN, COBOL)</li>
+                    <li>Uso de cintas y discos magnéticos para almacenamiento.</li>
+                </ul></td>
+                <td>IBM 1401, PDP-1</td>
+            </tr>
+            <tr>
+                <td>Tercera</td>
+                <td>1960s - 1970s</td>
+                <td>Circuitos Integrados (CI)</td>
+                <td>
+                    <ul>
+                        <li>Miniaturización y aumento de la velocidad.</li>
+                        <li>Mayor capacidad de procesamiento y memoria.</li>
+                        <li>Software más sofisticado (sistemas operativos).</li>
+                        <li>Posibilidad de multiprogramación y tiempo compartido.</li>
+                    </ul>
+                </td>
+                <td>IBM System/360, PDP-8</td>
+            </tr>
+            <tr>
+                <td>Cuarta</td>
+                <td>1970s - 1980s</td>
+                <td>Microprocesadores</td>
+                <td>
+                    <ul>
+                        <li>Aparición de las computadoras personales (PC).</li>
+                        <li>Precios más accesibles, uso masivo.</li>
+                        <li>Desarrollo de redes y GUIs (interfaces gráficas de usuario).</li>
+                        <li>Gran desarrollo de software y aplicaciones.</li>
+                    </ul>
+                </td>
+                <td>Apple II, IBM PC, Macintosh.</td>
+            </tr>
+            <tr>
+                <td>Quinta</td>
+                <td>1980s - 1990s</td>
+                <td>Inteligencia Artificial</td>
+                <td><ul>
+                    <li>Búsqueda de IA, procesamiento paralelo.</li>
+                    <li>Avances en redes, multimedia, realidad virtual.</li>
+                    <li>Desarrollo de computadoras portátiles.</li>
+                </ul></td>
+                <td><ul>
+                    <li>Supercomputadoras (Cray)</li>
+                    <li>Estaciones de trabajo</li>
+                </ul></td>
+            </tr>
+            <tr>
+                <td>Sexta</td>
+                <td>1990s - Actualidad</td>
+                <td>
+                    <ul>
+                        <li>Arquitecturas Paralelas</li>
+                        <li>Computación Cuántica</li>
+                        <li>Nanotecnología</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Enfoque en conectividad global (Internet).</li>
+                        <li>Computación móvil y ubicua.</li>
+                        <li>Mayor desarrollo de IA y Big Data.</li>
+                        <li>Computación en la nube.</li>
+                    </ul>
+                </td>
+                <td>
+                    <ul>
+                        <li>Smartphones, Tablets.</li>
+                        <li>Cloud Computing, IoT.</li>
+                        <li>Robótica, IA Avanzada.</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+        <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/ENIAC-changing_a_tube.jpg/1200px-ENIAC-changing_a_tube.jpg">
+        <figcaption>Las primeras computadoras se usaban principalmente para cálculos científicos y militares muy complejos.</figcaption>
+        <img src="https://miro.medium.com/v2/resize:fit:1280/0*qiBDg-hqq76ysIGv.jpg">
+        <figcaption>2da Generación del Computador, en vez de utilizar tarjetas perforadas, utiliza tubos de vacio</figcaption>
+        <img src="https://crehana-blog.imgix.net/media/filer_public/c1/6b/c16b2073-a5f0-47a2-893a-db9599c5a82a/museums-victoria-hfo5k0rnodo-unsplash.jpg?auto=format&q=50">
+        <figcaption>3ra Generación fue una revolución por su tamaño y capacidad de utilizar lenguajes más faciles</figcaption>
+        </figure>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/wD8yJnIG7gI" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </section>
+    <section>
+        <h2>Ahora es Importante la Telemática?</h2>
+        <ol>
+            <li><b>Gestión y Optimización:</b> Recopila y envía datos en tiempo real (ej. GPS de vehículos) para tomar decisiones eficientes, reducir costos y mejorar la productividad (ej. optimización de rutas).</li>
+            <li><b>Seguridad:</b> Facilita el rastreo, la localización y el monitoreo para prevenir robos y accidentes, haciendo sistemas más seguros.</li>
+            <li><b>Conectividad:</b> Es la base de Internet, la comunicación móvil y las redes, conectando personas y sistemas a nivel global.</li>
+            <li><b>Automatización:</b> Permite el control remoto y la automatización de procesos en industrias, hogares y ciudades.</li>
+            <li><b>Servicios Inteligentes:</b>  Impulsa el Internet de las Cosas (IoT) y las ciudades inteligentes, al interconectar dispositivos y gestionar servicios urbanos de forma eficiente.</li>
+        </ol>
+        <img src="https://cards.algoreducation.com/_next/image?url=https%3A%2F%2Ffiles.algoreducation.com%2Fproduction-ts%2F__S3__f86bf7c1-6a0b-46f2-a481-b2e2f7d3f42d&w=3840&q=75">
+        <img src="https://www.telefonica.com/es/wp-content/uploads/sites/4/2021/07/iStock_000034282008_web-950x530-2.jpg?w=950">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mZ3zgH0JAyk" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </section>
+    <section id="Preguntas">
+        <div class="question-form-section">
+            <h2>Envíanos tu Pregunta</h2>
+            <p>¿Tienes alguna duda o consulta? Rellena el siguiente formulario y te responderemos lo antes posible.</p>
+    
+            <form action="https://formspree.io/f/xkgbrqab" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Tu Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="email">Tu Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+    
+                <div class="form-group">
+                    <label for="pregunta">Tu Pregunta:</label>
+                    <textarea id="pregunta" name="pregunta" required></textarea>
+                </div>
+    
+                <div class="form-group">
+                    <input type="submit" value="Enviar Pregunta">
+                </div>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <p>@2025 Aprendiendo Internet para Jovenes C.E.P APEP "La Candelaria" Creadores y Diseñadores: Diego Diaz, Génesis Molina, Cristian Jimenez 4to "A"</p>
+    </footer>
+</body>
+</html>
